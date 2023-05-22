@@ -5,7 +5,7 @@ Parse.initialize(
 
 Parse.serverURL = 'https://pg-app-ugdod8udrehs2ez32vcv5kzl3c5881.scalabl.cloud/1/';
 
-const URL = "https://teachablemachine.withgoogle.com/models/KcOZVj4O5/";
+const URL = "https://teachablemachine.withgoogle.com/models/sFanVa7xN/";
 
 let model, webcam, newlabel, canvas, labelContainer, maxPredictions, camera_on = false, image_upload = false;
 
@@ -75,7 +75,7 @@ async function predict(input) {
         }
     }
 
-    if (bestClass == "Daisy" || bestClass == "Dandelion" || bestClass == "Sunflower") {
+    if (bestClass == "bacteria" || bestClass == "viral" || bestClass == "normal") {
         newlabel.className = "alert alert-warning";
     }
     else {
